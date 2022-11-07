@@ -4,9 +4,9 @@ from ui.pages.bspb.bspb import BSPB
 
 
 class LoginPage(BSPB):
-    username: PageElement = PageElement(by_css('#login-form input[name="username"]'))
-    password: PageElement = PageElement(by_css('#login-form input[name="password"]'))
-    btn_login: PageElement = PageElement(by_id('login-button'))
+    username = PageElement(by_css('#login-form input[name="username"]'))
+    password = PageElement(by_css('#login-form input[name="password"]'))
+    btn_login = PageElement(by_id('login-button'))
 
     def login(self, username: str, password: str):
         self.username.send_keys(username, clear=True)

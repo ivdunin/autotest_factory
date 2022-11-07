@@ -12,16 +12,16 @@ class TheInternet(BasePage):
 
 class DropDown(TheInternet):
     _page_path = '/dropdown'
-    select: PageElement = PageElement(by_css('select#dropdown'))
+    select = PageElement(by_css('select#dropdown'))
 
 
 class DynamicControls(TheInternet):
     _page_path = '/dynamic_controls'
-    checkbox: PageElement = PageElement(by_css('form#checkbox-example #checkbox'))
-    button: PageElement = PageElement(by_css('form#checkbox-example button'))
+    checkbox = PageElement(by_css('form#checkbox-example #checkbox'))
+    button = PageElement(by_css('form#checkbox-example button'))
 
 
 class DynamicLoading(TheInternet):
     _page_path = '/dynamic_loading/'
-    start: PageElement = PageElement(by_css('#start > button'))
-    finish: PageElement = PageElement(by_id('finish'))
+    start = PageElement(by_css('#start > button'))
+    finish = PageElement(by_id('finish'))

@@ -41,7 +41,7 @@ def browser(request) -> WebDriver:
         chrome_options.add_argument('--headless')
 
     chrome_options.add_argument('window-size={0}'.format(cfg.webdriver.browser.window_size))
-    browser: WebDriver = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome(options=chrome_options)
 
     yield browser
 

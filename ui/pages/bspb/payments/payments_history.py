@@ -7,8 +7,8 @@ from ui.pages.bspb.bspb import BSPB
 
 class PaymentsHistory(BSPB):
     _page_path = '/payments/history'
-    btn_apply_filter: PageElement = PageElement(by_id('apply-payments-filter'))
-    payment_history: PageElements = PageElements(by_css('table#payment-history tr'))
+    btn_apply_filter = PageElement(by_id('apply-payments-filter'))
+    payment_history = PageElements(by_css('table#payment-history tr'))
 
     def get_payment_history(self) -> List[str]:
         history = []
